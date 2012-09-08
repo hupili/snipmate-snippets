@@ -166,11 +166,11 @@ snippet ft
 	\footnote{${1:text}}
 snippet fig
 	\begin{figure}
-	\begin{center}
-	    \includegraphics[scale=${1}]{Figures/${2}}
-	\end{center}
-	\caption{${3}}
-	\label{fig:${4}}
+		\centering
+#\includegraphics[scale=${1}]{Figures/${2}}
+		\includegraphics[width=0.8\textwidth]{${2}}
+		\caption{${3}}
+		\label{fig:${4}}
 	\end{figure}
 snippet tikz
 	\begin{figure}
